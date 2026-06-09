@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>北越 下龍灣 · 鈦坦科技 2027 員工旅遊</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-brand">鈦坦科技 · 2027 Outing</div>
+    <ul class="nav-links">
+      <li><a href="#highlights">行程亮點</a></li>
+      <li><a href="#itinerary">每日行程</a></li>
+      <li><a href="#hotels">住宿</a></li>
+      <li><a href="#flight">航班</a></li>
+      <li><a href="#info">報名資訊</a></li>
+      <li><a href="#price">費用</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-bg" style="background-image:url('assets/images/img-01.jpg')"></div>
+  <div class="hero-content">
+    <div class="eyebrow">北越 · 下龍灣</div>
+    <h1>Ha Long Bay</h1>
+    <div class="sub">奢享遊船 · 雙層懷舊觀光列車 · 米其林美食之旅</div>
+    <div class="pills">
+      <span class="pill">5 天 4 夜</span>
+      <span class="pill">五星住宿</span>
+      <span class="pill">長榮直飛</span>
+      <span class="pill">三梯次選擇</span>
+    </div>
+  </div>
+</header>
+
+<section id="highlights">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>旅程亮點</h2>
+      <p>點開任一張卡片，瀏覽該景點的實景相簿</p>
+    </div>
+    <div class="hgrid">
+      <button class="hcard reveal" onclick="openGallery('halong',0)">
+        <div class="hcard-media"><img src="assets/images/img-02.jpg" alt="下龍灣海上桂林" loading="lazy">
+          <span class="hcard-count">◳ 6 張實景</span>
+        </div>
+        <div class="hcard-body">
+          <span class="hcard-kicker">Hạ Long Bay · 世界自然遺產</span>
+          <h3>下龍灣海上桂林</h3>
+          <p>搭乘頂級遊輪出海，巡遊驚訝洞、鐘乳石洞與 TITOP 英雄島。</p>
+          <span class="hcard-cta">瀏覽相簿 →</span>
+        </div>
+      </button>
+      <button class="hcard reveal" onclick="openGallery('oldquarter',0)">
+        <div class="hcard-media"><img src="assets/images/img-03.jpg" alt="河內 36 古街" loading="lazy">
+          <span class="hcard-count">◳ 6 張實景</span>
+        </div>
+        <div class="hcard-body">
+          <span class="hcard-kicker">Old Quarter · 千年古都</span>
+          <h3>河內 36 古街</h3>
+          <p>漫遊千年古都，搭電瓶車探訪聖約瑟夫大教堂與在地紀念品。</p>
+          <span class="hcard-cta">瀏覽相簿 →</span>
+        </div>
+      </button>
+      <button class="hcard reveal" onclick="openGallery('train',0)">
+        <div class="hcard-media"><img src="assets/images/img-04.jpg" alt="河內鐵道街 Train Street" loading="lazy">
+          <span class="hcard-count">◳ 4 張實景</span>
+        </div>
+        <div class="hcard-body">
+          <span class="hcard-kicker">Train Street · 鐵道時光</span>
+          <h3>河內鐵道街 Train Street</h3>
+          <p>造訪著名河內鐵道街，行程另含雙層觀光列車半日遊。</p>
+          <span class="hcard-cta">瀏覽相簿 →</span>
+        </div>
+      </button>
+      <button class="hcard reveal" onclick="openGallery('food',0)">
+        <div class="hcard-media"><img src="assets/images/img-05.jpg" alt="米其林美食巡禮" loading="lazy">
+          <span class="hcard-count">◳ 6 張實景</span>
+        </div>
+        <div class="hcard-body">
+          <span class="hcard-kicker">Vietnamese Cuisine · 味蕾之旅</span>
+          <h3>米其林美食巡禮</h3>
+          <p>米其林入選與推薦餐廳，從越南河粉到創意越式饗宴。</p>
+          <span class="hcard-cta">瀏覽相簿 →</span>
+        </div>
+      </button>
+      <button class="hcard reveal" onclick="openGallery('grandworld',0)">
+        <div class="hcard-media"><img src="assets/images/img-06.jpg" alt="越南威尼斯 Grand World" loading="lazy">
+          <span class="hcard-count">◳ 3 張實景</span>
+        </div>
+        <div class="hcard-body">
+          <span class="hcard-kicker">The Venice · 歐風娛樂城</span>
+          <h3>越南威尼斯 Grand World</h3>
+          <p>沉浸式劇場奇幻秀《聖珠再現》與威尼斯運河造景。</p>
+          <span class="hcard-cta">瀏覽相簿 →</span>
+        </div>
+      </button>
+      <button class="hcard reveal" onclick="openGallery('cruise',0)">
+        <div class="hcard-media"><img src="assets/images/img-07.jpg" alt="奢享海上遊船" loading="lazy">
+          <span class="hcard-count">◳ 6 張實景</span>
+        </div>
+        <div class="hcard-body">
+          <span class="hcard-kicker">Cruise · 驚訝洞 Sung Sot</span>
+          <h3>奢享海上遊船</h3>
+          <p>出海遊船並停靠最大鐘乳石洞「驚訝洞」，船上享自助午餐。</p>
+          <span class="hcard-cta">瀏覽相簿 →</span>
+        </div>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section id="itinerary" class="alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>每日行程</h2>
+      <p>五天四夜 · 由上而下的完整旅程動線</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-marker"><span class="tl-dot">01</span></div>
+        <div class="tl-card">
+          <div class="tl-photo" style="background-image:url('assets/images/img-08.jpg')" onclick="openGallery('oldquarter',0)">
+            <span class="tl-photo-cta">◳ 看相簿</span>
+          </div>
+          <div class="tl-content">
+            <span class="tl-daylabel">Day 01</span>
+            <h3>抵達河內 · 前進下龍灣</h3>
+            <div class="tl-date">1/21（四）· 1/28（四）· 2/18（四）</div>
+            <ul><li>桃園機場 → 河內機場</li><li>河內機場 → LÌM LIM DOUGHHAUS 甜甜圈<span class="drive">🚌 約 50 分</span></li><li>36 古街（含電瓶車）<span class="drive">🚌 約 10 分</span></li><li>聖約瑟夫大教堂 · CUL CAT 特色紀念品</li><li>古街 → 下龍灣<span class="drive">🚌 約 3 小時</span></li></ul>
+            <div class="meals"><span class="meal-tag">早 · 機上簡餐</span><span class="meal-tag">午 · 米其林入選 USD20</span><span class="meal-tag">晚 · 蓮花自助餐 USD16</span></div>
+            <div class="transit-note"><span>🚌</span><span>當日拉車總時程約 4 小時（機場至古街約 1 小時，古街至下龍灣約 3 小時）。</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-marker"><span class="tl-dot">02</span></div>
+        <div class="tl-card">
+          <div class="tl-photo" style="background-image:url('assets/images/img-09.jpg')" onclick="openGallery('cruise',0)">
+            <span class="tl-photo-cta">◳ 看相簿</span>
+          </div>
+          <div class="tl-content">
+            <span class="tl-daylabel">Day 02</span>
+            <h3>海上桂林 · 頂級遊輪</h3>
+            <div class="tl-date">1/22（五）· 1/29（五）· 2/19（五）</div>
+            <ul><li>亞特圖斯號 Sea Octopus Cruise 出海遊船</li><li>驚訝洞 · 鐘乳石洞</li><li>TITOP 英雄島（迪朵夫島）</li><li>越共椰奶冰沙咖啡</li></ul>
+            <div class="meals"><span class="meal-tag">早 · 飯店內</span><span class="meal-tag">午 · 遊輪自助</span><span class="meal-tag">晚 · 九層海鮮塔氣鍋 USD18</span></div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-marker"><span class="tl-dot">03</span></div>
+        <div class="tl-card">
+          <div class="tl-photo" style="background-image:url('assets/images/img-10.jpg')" onclick="openGallery('grandworld',0)">
+            <span class="tl-photo-cta">◳ 看相簿</span>
+          </div>
+          <div class="tl-content">
+            <span class="tl-daylabel">Day 03</span>
+            <h3>奇幻秀 · 越南威尼斯</h3>
+            <div class="tl-date">1/23（六）· 1/30（六）· 2/20（六）</div>
+            <ul><li>飯店 → 龍騰碧珠洞 Dragon Pearl Cave<span class="drive">🚌 約 50 分</span></li><li>沉浸式劇場奇幻秀《聖珠再現》· 洞穴浪漫饗宴</li><li>→ Grand World Hung Yen 越南威尼斯<span class="drive">🚌 約 2.5 小時</span></li><li>→ UNIQLO Hoan Kiem 網美照<span class="drive">🚌 約 40 分</span></li></ul>
+            <div class="meals"><span class="meal-tag">早 · 飯店內</span><span class="meal-tag">午 · 洞穴浪漫饗宴 USD25</span><span class="meal-tag">晚 · 米其林 NGON GARDEN USD16</span></div>
+            <div class="transit-note"><span>🚌</span><span>當日拉車總時程約 4 小時，移動距離較長，建議備好暈車藥與保暖衣物。</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-marker"><span class="tl-dot">04</span></div>
+        <div class="tl-card">
+          <div class="tl-photo" style="background-image:url('assets/images/img-11.jpg')" onclick="openGallery('train',0)">
+            <span class="tl-photo-cta">◳ 看相簿</span>
+          </div>
+          <div class="tl-content">
+            <span class="tl-daylabel">Day 04</span>
+            <h3>鐵道舊時光 · 雙層列車</h3>
+            <div class="tl-date">1/24（日）· 1/31（日）· 2/21（日）</div>
+            <ul><li>百年古宅咖啡店（贈一杯飲料）</li><li>→ 鐵道舊時光<span class="drive">🚌 約 40 分</span></li><li>雙層觀光列車 Hanoi Train 河內火車半日遊（13:30–17:00）</li><li>晚餐米其林一星饗宴</li></ul>
+            <div class="meals"><span class="meal-tag">早 · 飯店內</span><span class="meal-tag">午 · 石鍋河粉＋春卷 USD12</span><span class="meal-tag">晚 · TAM VI 道地越式 USD20</span></div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-marker"><span class="tl-dot">05</span></div>
+        <div class="tl-card">
+          <div class="tl-photo" style="background-image:url('assets/images/img-12.jpg')" onclick="openGallery('halong',0)">
+            <span class="tl-photo-cta">◳ 看相簿</span>
+          </div>
+          <div class="tl-content">
+            <span class="tl-daylabel">Day 05</span>
+            <h3>滿載而歸</h3>
+            <div class="tl-date">1/25（一）· 2/01（一）· 2/22（一）</div>
+            <ul><li>飯店 → 河內機場</li><li>返抵桃園機場</li></ul>
+            <div class="meals"><span class="meal-tag">早 · 飯店內</span><span class="meal-tag">午 · 機上精緻餐點</span></div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="hotels">
+  <div class="container">
+    <div class="section-head reveal"><h2>住宿體驗</h2><p>兩座城市，四晚五星級的尊榮下榻</p></div>
+    <div class="hotel reveal">
+      <div class="hotel-img" style="background-image:url('assets/images/hotel-halong.jpg')"></div>
+      <div class="hotel-text">
+        <div class="stars">★★★★★</div>
+        <h3>溫德姆花園傳奇</h3>
+        <div class="en">Wyndham Garden Legend Halong　│ Day 1 & 2</div>
+        <p>完美融合商務與休閒機能，現代化舒適客房，館內設有戶外游泳池、健身中心與多國風味景觀餐廳，是探索世界遺產下龍灣的理想下榻首選。（或華森尊貴酒店 The Watson Premium / Wyndham Soleil 或同級）</p>
+      </div>
+    </div>
+    <div class="hotel reveal">
+      <div class="hotel-img" style="background-image:url('assets/images/hotel-hanoi.jpg')"></div>
+      <div class="hotel-text">
+        <div class="stars">★★★★★</div>
+        <h3>西河內喜來登飯店</h3>
+        <div class="en">Sheraton Hanoi West　│ Day 3 & 4</div>
+        <p>融合現代典雅設計風格，提供寬敞舒適客房與標誌性頂級睡眠體驗。館內設有戶外游泳池、24 小時健身房、水療中心及多元異國風味餐廳，完美契合企業商旅與獎勵旅遊需求。（或河內杜斯特勒宮圖合飯店 / 河內廣場飯店 GRAND PLAZA 或同級）</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="flight" class="alt">
+  <div class="container">
+    <div class="section-head reveal"><h2>航班資訊</h2><p>長榮航空直飛 · 桃園 ⇄ 河內</p></div>
+    <div class="reveal" style="overflow-x:auto;">
+      <table class="flight-table">
+        <thead><tr><th>出發日</th><th>航班</th><th>起點</th><th>起飛</th><th>終點</th><th>抵達</th><th>飛行時間</th></tr></thead>
+        <tbody>
+          <tr><td>1/21 · 1/28 · 2/18（四）</td><td>長榮 BR-397</td><td>桃園</td><td>09:15</td><td>河內</td><td>11:35</td><td>3時20分</td></tr>
+          <tr><td>1/25 · 2/01 · 2/22（一）</td><td>長榮 BR-398</td><td>河內</td><td>12:35</td><td>桃園</td><td>16:10</td><td>2時35分</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="info-grid reveal" style="margin-top:24px;">
+      <div class="info-card">
+        <div class="ico">🚌</div><h4>台灣接駁集合時間</h4>
+        <ul><li>台北　集合 <strong>06:15</strong>　出發 06:20</li><li>台中　集合 <strong>05:05</strong>　出發 05:10</li><li>高雄　集合 <strong>03:15</strong>　出發 03:20</li></ul>
+        <p style="font-size:13px;color:#86868b;margin-top:12px;">北中南僅提供各辦公室至桃園機場的遊覽車來回接送，不提供其他交通及住宿補助。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="info">
+  <div class="container">
+    <div class="section-head reveal"><h2>報名資訊</h2><p>三梯次任選 · 每梯上限 80 人 · 先搶先贏</p></div>
+    <div class="batch-row reveal" style="margin-bottom:36px;">
+      <div class="batch"><div class="b-num">第一梯</div><div class="b-date">1/21 – 1/25</div><div class="b-cap">2027 年 · 週四 ~ 週一</div></div>
+      <div class="batch"><div class="b-num">第二梯</div><div class="b-date">1/28 – 2/01</div><div class="b-cap">2027 年 · 週四 ~ 週一</div></div>
+      <div class="batch"><div class="b-num">第三梯</div><div class="b-date">2/18 – 2/22</div><div class="b-cap">2027 年 · 週四 ~ 週一</div></div>
+    </div>
+    <div class="info-grid reveal">
+      <div class="info-card"><div class="ico">🛂</div><h4>出入境須知</h4><ul><li>護照效期須 <strong>6 個月以上</strong></li><li>台灣護照前往越南通常需申請 <strong>eVisa</strong></li><li>出發前請再次確認最新入境政策</li><li>查詢：evisa.gov.vn</li></ul></div>
+      <div class="info-card"><div class="ico">🗓️</div><h4>梯次規則</h4><ul><li>皆請 <strong>公假兩天</strong>，其餘請特休</li><li>每梯上限 <strong>80 人</strong>，各 Team 需留守</li><li>一梯低於 50 人可能併團</li><li>福委會保有修改及終止權利</li></ul></div>
+      <div class="info-card"><div class="ico">🛏️</div><h4>房間分配</h4><ul><li>預設雙人房（盡可能兩小床）</li><li>室友許願須 <strong>跨 Division</strong></li><li>眷屬直接安排同房</li><li>室友僅許願，不保證</li></ul></div>
+      <div class="info-card"><div class="ico">⏰</div><h4>準時原則</h4><ul><li>每次集合點名，<strong>12:00:01 即遲到</strong></li><li>遲到者進行「真請客大冒險」</li><li>貢獻請客金 1000 元／1 分鐘</li><li>或執行大冒險，內容 Slack 徵稿抽籤</li></ul></div>
+      <div class="info-card"><div class="ico">❌</div><h4>取消政策</h4><ul><li>21 日以上：罰金 <strong>20%</strong></li><li>2–20 日內：罰金 <strong>30%</strong></li><li>前 1 日：罰金 <strong>50%</strong></li><li>出發當日：罰金 <strong>100%</strong></li></ul></div>
+      <div class="info-card"><div class="ico">❓</div><h4>常見問題</h4><ul><li>原則團進團出，不可脫團自由行</li><li>不可代改個人機票</li><li>報名截止前可調整梯次，逾時視同取消</li><li>報名先搶先贏，可找人代填</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="price" class="alt">
+  <div class="container">
+    <div class="section-head reveal"><h2>費用與補助</h2><p>團費 NT$ 35,000 起 · 正式員工請自行扣除補助</p></div>
+    <div class="price-wrap reveal" style="margin-bottom:32px;">
+      <div class="price-card feature"><div class="label">滿一年正式員工補助</div><div class="amt">$25,000</div><div class="note">通過試用期 · 任職滿一年</div></div>
+      <div class="price-card"><div class="label">未滿一年正式員工補助</div><div class="amt">$17,500</div><div class="note">通過試用期 · 任職未滿一年</div></div>
+      <div class="price-card"><div class="label">試用期內</div><div class="amt">$0</div><div class="note">基準日前尚未過試用期</div></div>
+    </div>
+    <div class="price-wrap reveal">
+      <div class="price-card"><div class="label">正式員工配偶</div><div class="amt">$30,000</div><div class="note">補助 20%，最高 $5,000</div></div>
+      <div class="price-card"><div class="label">除配偶外眷屬</div><div class="amt">$35,000</div><div class="note">直系血親 · 兄弟姐妹 · 男女朋友</div></div>
+      <div class="price-card"><div class="label">6 歲以下不佔床</div><div class="amt">$33,000</div><div class="note">2 歲以下不佔機位 $6,000</div></div>
+    </div>
+    <p style="text-align:center;color:#86868b;font-size:13.5px;margin-top:28px;">補助以報名年度 12/31 為計算基準日。眷屬一律安排與員工相同方式。</p>
+  </div>
+</section>
+
+<footer><div class="note">
+  新加坡商鈦坦科技 TITANSOFT · 2027 越南河內 Outing｜北越下龍灣 · 東南旅遊 JET<br>
+  行程內容依公司文件整理，景點照片取自 Wikimedia Commons（CC 授權實景照），實際安排以福委會公布為主。
+</div></footer>
+
+<!-- Lightbox -->
+<div class="lb" id="lb" onclick="if(event.target===this)closeGallery()">
+  <div class="lb-top">
+    <div class="lb-title"><h3 id="lbTitle"></h3><div class="lb-sub" id="lbSub"></div><div class="lb-desc" id="lbDesc"></div></div>
+    <button class="lb-close" onclick="closeGallery()">✕</button>
+  </div>
+  <div class="lb-stage">
+    <button class="lb-nav lb-prev" onclick="navGallery(-1)">‹</button>
+    <img id="lbImg" src="" alt="">
+    <div class="lb-cap" id="lbCap"></div>
+    <button class="lb-nav lb-next" onclick="navGallery(1)">›</button>
+  </div>
+  <div class="lb-counter" id="lbCounter"></div>
+  <div class="lb-thumbs" id="lbThumbs"></div>
+  <div class="lb-src" id="lbSrc"></div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
