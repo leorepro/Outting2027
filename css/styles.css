@@ -201,6 +201,21 @@
   .route-open{display:inline-block;margin:20px 28px 28px;font-size:14.5px;font-weight:600;color:#0a84ff;text-decoration:none;}
   .route-open:hover{text-decoration:underline;}
 
+  /* batch countdown */
+  .b-countdown{margin-top:16px;padding-top:14px;border-top:1px solid #f0f0f0;font-size:13.5px;color:#86868b;font-weight:500;}
+  .b-countdown strong{font-size:24px;color:#0a84ff;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-0.01em;margin:0 2px;}
+
+  /* interactive packing checklist */
+  .checklist{list-style:none;margin-top:4px;}
+  .checklist li{border-top:1px solid #f4f4f4;}
+  .checklist li:first-child{border-top:none;}
+  .checklist label{display:flex;align-items:flex-start;gap:11px;padding:8px 2px;font-size:14.5px;color:#515154;line-height:1.55;cursor:pointer;}
+  .checklist input{margin-top:2px;width:17px;height:17px;accent-color:#0a84ff;flex-shrink:0;cursor:pointer;}
+  .checklist input:checked ~ span{color:#a1a1a6;text-decoration:line-through;}
+
+  /* vietnamese phrase column */
+  .conv-table td.vn{font-weight:600;color:#0071e3;white-space:nowrap;}
+
   @media(max-width:600px){
     .acc > summary{font-size:16px;padding:16px 18px;}
     .acc > summary::after{font-size:23px;}

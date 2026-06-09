@@ -61,3 +61,21 @@ const GAL = {"halong": ["assets/images/img-02.jpg", "assets/images/img-13.jpg", 
       .then(d=>{ if(d&&typeof d.value==='number')animateTo(d.value); else numEl.textContent='—'; })
       .catch(()=>{ numEl.textContent='—'; });
   })();
+
+  /* ── 各梯次出發倒數天數 ── */
+  (function(){
+    const els=document.querySelectorAll('.b-countdown[data-depart]');
+    if(!els.length)return;
+    const now=new Date();
+    const today=new Date(now.getFullYear(),now.getMonth(),now.getDate());
+    els.forEach(el=>{
+      const p=el.dataset.depart.split('-');
+      const dep=new Date(+p[0],+p[1]-1,+p[2]);
+      const days=Math.round((dep-today)/86400000);
+      const strong=el.querySelector('strong');
+      if(days>1){ el.innerHTML='距出發 <strong>'+days+'</strong> 天'; }
+      else if(days===1){ el.innerHTML='就在 <strong>明天</strong> 出發'; }
+      else if(days===0){ el.innerHTML='<strong>今天</strong> 出發！'; }
+      else { el.innerHTML='本梯次已出發'; }
+    });
+  })();
