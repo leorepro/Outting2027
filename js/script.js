@@ -79,3 +79,15 @@ const GAL = {"halong": ["assets/images/img-02.jpg", "assets/images/img-13.jpg", 
       else { el.innerHTML='本梯次已出發'; }
     });
   })();
+
+  /* ── Hero 背景輪播（crossfade） ── */
+  (function(){
+    const slides=document.querySelectorAll('.hero-slide');
+    if(slides.length<2)return;
+    let i=0;
+    setInterval(()=>{
+      slides[i].classList.remove('active');
+      i=(i+1)%slides.length;
+      slides[i].classList.add('active');
+    },5000);
+  })();
