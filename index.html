@@ -4,13 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>北越 下龍灣 · 鈦坦科技 2027 員工旅遊</title>
-<link rel="stylesheet" href="css/styles.css?v=4">
+<link rel="stylesheet" href="css/styles.css?v=5">
 </head>
 <body>
 
 <nav>
   <div class="nav-inner">
-    <div class="nav-brand">鈦坦科技 · 2027 Outing</div>
+    <div class="nav-left">
+      <div class="visit-counter" id="visitCounter" aria-live="polite" title="累計造訪人次">
+        <span class="vc-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+            <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.7"/>
+          </svg>
+        </span>
+        <span class="vc-num" id="vcNum">·····</span>
+        <span class="vc-label">人次</span>
+      </div>
+      <div class="nav-brand">鈦坦科技 · 2027 Outing</div>
+    </div>
     <ul class="nav-links">
       <li><a href="#highlights">行程亮點</a></li>
       <li><a href="#itinerary">每日行程</a></li>
@@ -684,18 +696,7 @@
   </div>
 </section>
 
-<footer>
-  <div class="visit-counter" id="visitCounter" aria-live="polite" title="累計造訪人次">
-    <span class="vc-icon" aria-hidden="true">
-      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
-        <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.7"/>
-      </svg>
-    </span>
-    <span class="vc-num" id="vcNum">·····</span>
-    <span class="vc-label">人次造訪</span>
-  </div>
-  <div class="note">
+<footer><div class="note">
   新加坡商鈦坦科技 TITANSOFT · 2027 越南河內 Outing｜北越下龍灣 · 東南旅遊 JET<br>
   行程內容依公司文件整理，景點照片取自 Wikimedia Commons（CC 授權實景照），實際安排以福委會公布為主。
 </div></footer>
