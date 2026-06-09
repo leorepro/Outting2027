@@ -145,3 +145,45 @@
     .lb-title h3{font-size:20px;}
     .lb-title .lb-desc{display:none;}
   }
+
+  /* ===== Collapsible accordion (native <details>) ===== */
+  .acc{background:#fff;border-radius:18px;box-shadow:0 4px 20px rgba(0,0,0,0.05);margin-bottom:14px;overflow:hidden;}
+  .acc > summary{list-style:none;padding:20px 24px;font-size:18px;font-weight:600;color:#1d1d1f;cursor:pointer;display:flex;align-items:center;justify-content:space-between;transition:background .2s;}
+  .acc > summary::-webkit-details-marker{display:none;}
+  .acc > summary:hover{background:#fafafa;}
+  .acc > summary::after{content:"+";color:#0a84ff;font-size:26px;font-weight:400;line-height:1;margin-left:14px;flex-shrink:0;transition:transform .3s cubic-bezier(.2,.7,.2,1);}
+  .acc[open] > summary::after{transform:rotate(45deg);}
+  .acc[open] > summary{border-bottom:1px solid #f0f0f0;}
+  .acc-body{padding:4px 24px 24px;color:#424245;font-size:15px;line-height:1.65;}
+  .acc[open] > .acc-body{animation:accIn .4s ease;}
+  @keyframes accIn{from{opacity:0;transform:translateY(-6px);}to{opacity:1;transform:none;}}
+
+  /* sub-topic blocks inside acc-body */
+  .acc-sub{margin-top:16px;}
+  .acc-sub:first-child{margin-top:0;}
+  .acc-sub h5{font-size:14px;font-weight:700;color:#0071e3;letter-spacing:.03em;margin-bottom:6px;}
+  .acc-sub p{margin:0;color:#515154;}
+
+  /* bullet list inside accordions */
+  .acc-list{list-style:none;}
+  .acc-list li{font-size:14.5px;color:#515154;padding:7px 0 7px 20px;position:relative;border-top:1px solid #f4f4f4;line-height:1.6;}
+  .acc-list li:first-child{border-top:none;}
+  .acc-list li::before{content:"";position:absolute;left:2px;top:15px;width:6px;height:6px;border-radius:50%;background:#0a84ff;}
+
+  /* inline keyword highlight */
+  .kw{background:rgba(10,132,255,0.10);color:#0071e3;font-weight:600;padding:1px 7px;border-radius:6px;white-space:nowrap;}
+
+  /* neutral-grey duration tag */
+  .dur{display:inline-flex;align-items:center;margin-left:8px;font-size:12px;font-weight:600;color:#6e6e73;background:#f0f0f2;padding:2px 9px;border-radius:980px;white-space:nowrap;}
+
+  /* currency conversion table */
+  .conv-table{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.05);margin-top:14px;}
+  .conv-table th{background:#1d1d1f;color:#fff;padding:12px 14px;font-size:13.5px;font-weight:600;text-align:left;}
+  .conv-table td{padding:12px 14px;font-size:14px;border-top:1px solid #f0f0f0;color:#424245;}
+
+  @media(max-width:600px){
+    .acc > summary{font-size:16px;padding:16px 18px;}
+    .acc > summary::after{font-size:23px;}
+    .acc-body{padding:2px 18px 20px;}
+    .conv-table th,.conv-table td{padding:9px 10px;font-size:13px;}
+  }
