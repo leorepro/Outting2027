@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>北越 下龍灣 · 鈦坦科技 2027 員工旅遊</title>
-<link rel="stylesheet" href="css/styles.css?v=3">
+<link rel="stylesheet" href="css/styles.css?v=4">
 </head>
 <body>
 
@@ -120,6 +120,61 @@
           <span class="hcard-kicker">Doughhaus · 人氣甜點名所</span>
           <h3>LÌM LIM DOUGHHAUS 甜甜圈</h3>
           <p>抵達河內的第一站，先嚐人氣手作甜甜圈與越式咖啡。</p>
+          <span class="hcard-cta">瀏覽相簿 →</span>
+        </div>
+      </button>
+      <button class="hcard reveal" onclick="openGallery('seafood',0)">
+        <div class="hcard-media"><img src="assets/images/food-seafood-1.jpg" alt="下龍灣海鮮塔氣鍋" loading="lazy">
+          <span class="hcard-count">◳ 2 張實景</span>
+        </div>
+        <div class="hcard-body">
+          <span class="hcard-kicker">Seafood Hotpot · 下龍灣海味</span>
+          <h3>下龍灣海鮮塔氣鍋</h3>
+          <p>Day 1 晚餐｜九層海鮮塔氣鍋，現撈蝦蟹貝類佐暖心火鍋湯底。</p>
+          <span class="hcard-cta">瀏覽相簿 →</span>
+        </div>
+      </button>
+      <button class="hcard reveal" onclick="openGallery('cave',0)">
+        <div class="hcard-media"><img src="assets/images/food-cave-1.jpg" alt="龍騰碧珠洞洞穴饗宴" loading="lazy">
+          <span class="hcard-count">◳ 2 張實景</span>
+        </div>
+        <div class="hcard-body">
+          <span class="hcard-kicker">Cave Dining · 鐘乳石洞</span>
+          <h3>龍騰碧珠洞・洞穴饗宴</h3>
+          <p>Day 2 午餐｜在鐘乳石洞內享浪漫饗宴，獨一無二的用餐場景。</p>
+          <span class="hcard-cta">瀏覽相簿 →</span>
+        </div>
+      </button>
+      <button class="hcard reveal" onclick="openGallery('coffee',0)">
+        <div class="hcard-media"><img src="assets/images/food-coffee-1.jpg" alt="河內越式蛋咖啡" loading="lazy">
+          <span class="hcard-count">◳ 2 張實景</span>
+        </div>
+        <div class="hcard-body">
+          <span class="hcard-kicker">Egg Coffee · 河內名物</span>
+          <h3>河內越式蛋咖啡</h3>
+          <p>綿密蛋霜浮於濃醇咖啡之上，河內百年咖啡館必嚐的招牌風味。</p>
+          <span class="hcard-cta">瀏覽相簿 →</span>
+        </div>
+      </button>
+      <button class="hcard reveal" onclick="openGallery('pho',0)">
+        <div class="hcard-media"><img src="assets/images/food-pho-1.jpg" alt="石鍋河粉與炸春卷" loading="lazy">
+          <span class="hcard-count">◳ 3 張實景</span>
+        </div>
+        <div class="hcard-body">
+          <span class="hcard-kicker">Phở &amp; Nem · 越南國民美食</span>
+          <h3>石鍋河粉＋炸春卷</h3>
+          <p>Day 3 午餐｜熱騰騰石鍋河粉，搭配金黃酥脆的越式炸春卷。</p>
+          <span class="hcard-cta">瀏覽相簿 →</span>
+        </div>
+      </button>
+      <button class="hcard reveal" onclick="openGallery('ngon',0)">
+        <div class="hcard-media"><img src="assets/images/food-ngon-1.jpg" alt="米其林 NGON GARDEN 創意越式" loading="lazy">
+          <span class="hcard-count">◳ 2 張實景</span>
+        </div>
+        <div class="hcard-body">
+          <span class="hcard-kicker">NGON Garden · 米其林推薦</span>
+          <h3>米其林 NGON GARDEN</h3>
+          <p>Day 2 晚餐｜綠意花園庭院間，品嚐米其林推薦的創意越式饗宴。</p>
           <span class="hcard-cta">瀏覽相簿 →</span>
         </div>
       </button>
@@ -629,7 +684,18 @@
   </div>
 </section>
 
-<footer><div class="note">
+<footer>
+  <div class="visit-counter" id="visitCounter" aria-live="polite" title="累計造訪人次">
+    <span class="vc-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+        <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.7"/>
+      </svg>
+    </span>
+    <span class="vc-num" id="vcNum">·····</span>
+    <span class="vc-label">人次造訪</span>
+  </div>
+  <div class="note">
   新加坡商鈦坦科技 TITANSOFT · 2027 越南河內 Outing｜北越下龍灣 · 東南旅遊 JET<br>
   行程內容依公司文件整理，景點照片取自 Wikimedia Commons（CC 授權實景照），實際安排以福委會公布為主。
 </div></footer>
@@ -651,6 +717,6 @@
   <div class="lb-src" id="lbSrc"></div>
 </div>
 
-<script src="js/script.js"></script>
+<script src="js/script.js?v=2"></script>
 </body>
 </html>
